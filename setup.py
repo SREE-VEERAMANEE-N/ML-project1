@@ -13,7 +13,7 @@ def get_requirements(file_path: str )-> List[str]:
         requirements = file_obj.readlines()
         requirements = [req.replace('\n','') for req in requirements]
 
-        if'HYPEN_E_DOT' in requirements:
+        if 'HYPEN_E_DOT' in requirements:
             requirements.remove('HYPEN_E_DOT')
 
 
